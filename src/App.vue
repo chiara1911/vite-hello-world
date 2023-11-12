@@ -1,12 +1,20 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
   
-  <HelloWorld msg="Hello World" />
+  <AppTitle />
 </template>
 
+<script>
+import AppTitle from './components/AppTitle.vue';
+
+export default {
+  name: 'App',
+  components: {
+    AppTitle
+  }
+}
+</script>
 <style scoped>
 
 </style>
